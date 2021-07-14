@@ -92,6 +92,13 @@ spec:
       containers:
       - name: helloworld
         image: quay.io/giantswarm/helloworld:latest
+        resources:
+          requests:
+            cpu: 50m
+            memory: 50Mi
+          limits:
+            cpu: 50m
+            memory: 50Mi
         ports:
         - containerPort: 8080
         livenessProbe:
