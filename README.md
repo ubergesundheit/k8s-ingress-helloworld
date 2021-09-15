@@ -2,7 +2,10 @@
 
 Usage:
 
+1. Change the host in `kustomization.yaml`
+
+2. Execute
 ```
-kustomize build | kubectl apply -f -
+kubectl apply -k .
 ```
 
